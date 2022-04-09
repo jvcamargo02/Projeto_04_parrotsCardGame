@@ -1,6 +1,9 @@
 
-.container{
+html{
     background-color: #EEf9bf;
+}
+
+.container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,7 +33,6 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    height: 100%;
 }
 
 
@@ -51,11 +53,4 @@ header{
 .card > img {
     width: 100px;
     height: 100px;
-}
-
-@media (max-width:840px) {
-
-    .container{
-        height: 100%;
-    }
 }
