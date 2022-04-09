@@ -1,13 +1,13 @@
 
-
 .container{
     background-color: #EEf9bf;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 header{
@@ -17,9 +17,11 @@ header{
     font-weight: 700;
     color: #75b79E;
     text-transform: uppercase;
-    line-height: 63px;
-    margin: 0px auto 40px auto;
+    margin: 40px auto;
     text-align: center;
+    line-height: 63PX;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .cards{
@@ -28,6 +30,7 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
 }
 
 
@@ -48,4 +51,11 @@ header{
 .card > img {
     width: 100px;
     height: 100px;
+}
+
+@media (max-width:840px) {
+
+    .container{
+        height: 100%;
+    }
 }
