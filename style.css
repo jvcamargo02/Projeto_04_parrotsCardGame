@@ -30,10 +30,10 @@ header{
 .cards{
     height: auto;
     width: auto;
-    max-width: 880px;
+    max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
@@ -84,10 +84,18 @@ align-items: center;
     transform: rotateY(180deg);
 }
 
+.matchCard{
+    transform: rotateY(180deg);
+}
+
 .card > * > img {
     width: 100px;
     height: 100px;
 }
+
+.disabled {
+    pointer-events: none;
+}   
 
 @media (max-width:436px){
     h1{
