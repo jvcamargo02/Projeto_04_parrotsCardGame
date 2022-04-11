@@ -1,6 +1,15 @@
 let numCards;
 let cards = document.querySelector(".cards")
+const cardsList = [{
+    image: "images/bobrossparrot.gif",
+    visibility: "hidden"
+},
+{
+    image: "images/fiestaparrot.gif",
+    visibility: "hidden"
 
+}
+]
 
 
 
@@ -12,13 +21,16 @@ function distributeCards () {
 
     if (numCards%2===0 && numCards>=4 && numCards<=14){
         for (let i=0;i<numCards;i++ ){
-            cards.innerHTML += `<li class="card">
-        
-        <img src="images/front.png" alt="Parrot Front">
-        
-        
-        
-        </li><!-- card --> `
+            cards.innerHTML += 
+        `    <div onclick="flip(this)" class="card">
+            <div class="front">
+            <img src="images/front.png" alt="Front">
+            </div>
+            <div class="back">
+            <img src="images/bobrossparrot.gif" alt="bobrossparrot">
+            </div>
+
+    </div>`
         
         } 
         } else {
@@ -30,6 +42,17 @@ function distributeCards () {
 distributeCards()
 
 console.log(numCards)
+
+
+
+/* FUNÇÕES DECLARADAS*/
+
+
+function flip (element){
+
+    const flipCard = element.classList.toggle("flipped")
+      
+}
 
 
 /* <li class="card">
